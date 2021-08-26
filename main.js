@@ -3,10 +3,12 @@ const app = Vue.createApp({
     return {
       cart: 0,
       product: "Socks",
+      brand: "Vue Mastery",
       description: "These are some awesome socks!",
       image: "./assets/images/socks_green.jpg",
       url: "http://test.de",
       inventory: 8,
+      inStock: false,
       onSale: true,
       details: ["50% cotton", "30% wool", "20% polyester"],
       variants: [
