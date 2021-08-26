@@ -5,6 +5,8 @@ const app = Vue.createApp({
       description: "These are some awesome socks!",
       image: "./assets/images/socks_green.jpg",
       url: "http://test.de",
+      inventory: 8,
+      onSale: true,
     };
   },
 });
