@@ -40,7 +40,6 @@ body {
   border-radius: 50%;
 }
 
-
 .disabledButton {
   background-color: #d8d8d8;
   cursor: not-allowed;
@@ -89,7 +88,7 @@ li {
 }
 
 .out-of-stock-img {
-  opacity:0.5
+  opacity: 0.5;
 }
 
 p {
@@ -179,4 +178,18 @@ ul {
   .review-form {
     width: 90%;
   }
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+}
+
+.radio-btn input {
+  width: 20px;
+  margin-bottom: 0;
+}
+
+.radio-btn label {
+  margin-left: 10px;
 }

@@ -18,11 +18,11 @@ app.component("review-form", {
       <option>1</option>
     </select>
     <p>Would you recommend this item?</p>
-    <div>
+    <div class="radio-btn">
         <input type="radio" id="yes" name="recommentation" value="yes" v-model="recommendation">
         <label for="yes">Yes</label>
     </div>
-    <div>
+    <div class="radio-btn">
         <input type="radio" id="no" name="recommentation" value="no" v-model="recommendation">
         <label for="no">No</label>
     </div>
