@@ -14,7 +14,7 @@ app.component("review-list", {
         <li v-for="(review, index) in reviews" :key="index">
           {{ review.name }} gave this {{ review.rating }} stars
           <br/>
-          "{{ review.review }}"
+          "{{ review.review }}" and {{ review.recommendation === "yes" ? "would" : "would not" }} recommend this item.
           <br/>
         </li>
       </ul>
