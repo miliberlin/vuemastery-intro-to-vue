@@ -39,6 +39,9 @@ app.component("product-display", {
             <button class="button" @click="removeFromCart">Remove</button>
         </div>
         </div>
+        <review-list :reviews="reviews"></review-list>
+        <review-form @review-submitted=
+        "addReview"></review-form>
     </div>
     `,
   data() {
@@ -65,6 +68,7 @@ app.component("product-display", {
         },
       ],
       sizes: ["36-38", "39-41", "42-44"],
+      reviews: [],
     };
   },
   methods: {
@@ -76,6 +80,9 @@ app.component("product-display", {
     },
     updateVariant(index) {
       this.selectedVariant = index;
+    },
+    addReview(review) {
+      this.reviews.push(review);
     },
   },
   computed: {
